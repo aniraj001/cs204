@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+
+  #include<bits/stdc++.h>
 
 using namespace std;
 
@@ -37,8 +38,8 @@ void DelFirst()
         node* temp=(top->ptr);
         free(top);
         top=temp;
-        cout<<0<<'\n';
-    }
+       
+          }
     return;
 }
 
@@ -59,7 +60,7 @@ void Del(int x,int y)
                 top=it->ptr;
             }
             free(it);
-            cout<<0<<'\n';
+            
             return;
         }
         else
@@ -73,18 +74,18 @@ void Del(int x,int y)
 }
 
 void Search(double d)
-{
+{int k=0;
     d*=d;
     node * it=top;
-    while(it!=NULL)
+     while(it!=NULL)
     {
         if(it->p.x*it->p.x+it->p.y*it->p.y<=d)
         {
-            cout<<'('<<it->p.x<<','<<it->p.y<<')';
+           k++;
         }
         it=it->ptr;
     }
-    cout<<'\n';
+    cout<<k<<'\n';
     return;
 }
 
@@ -116,7 +117,7 @@ void Length()
         cntr++;
         it=it->ptr;
     }
-    cout<<cntr<<'\n';
+     cout<<cntr<<'\n';
     return;
 }
 
@@ -155,21 +156,11 @@ int main()
             case 6:
                 Length();
                 break;
-            default:
-                break;
+            default: break;
         }
     }
     return 0;
 }
-
-
-
-
-
-
-
-
-
 
 
 
