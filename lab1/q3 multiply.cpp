@@ -67,7 +67,9 @@ string multiply(string num1, string num2)
 } 
   
 int main() 
-{ 
+{ long long int t;
+ cin>>t;
+ while(t--){
     string str1 ;
     string str2 ;
       cin>>str1>>str2;
@@ -90,7 +92,7 @@ int main()
             str1 = str1.substr(1); 
             str2 = str2.substr(1); 
         } 
-    cout << multiply(str1, str2);
-     
+    cout << multiply(str1, str2)<<endl;
+ }
     return 0; 
 } 
